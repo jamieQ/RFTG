@@ -1,9 +1,9 @@
-This is a program to play Race for the Galaxy against AI players.  Rules
+This is a program to play Race for the Galaxy against AI or other human players.  Rules
 for the game and expansions can be found at:
 
-http://www.riograndegames.com/uploads/Game/Game_240_gameRules.pdf
-http://www.riograndegames.com/uploads/Game/Game_253_gameRules.pdf
-http://www.riograndegames.com/uploads/Game/Game_301_gameRules.pdf
+*	http://www.riograndegames.com/uploads/Game/Game_240_gameRules.pdf
+*	http://www.riograndegames.com/uploads/Game/Game_253_gameRules.pdf
+*	http://www.riograndegames.com/uploads/Game/Game_301_gameRules.pdf
 
 ### COMPILATION
 
