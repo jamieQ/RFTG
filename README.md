@@ -1,18 +1,18 @@
 This is a program to play Race for the Galaxy against AI players.  Rules
 for the game and expansions can be found at:
 
-http://www.riograndegames.com/uploads/Game/Game_240_gameRules.pdf
-http://www.riograndegames.com/uploads/Game/Game_253_gameRules.pdf
-http://www.riograndegames.com/uploads/Game/Game_301_gameRules.pdf
+(http://www.riograndegames.com/uploads/Game/Game_240_gameRules.pdf)
+(http://www.riograndegames.com/uploads/Game/Game_253_gameRules.pdf)
+(http://www.riograndegames.com/uploads/Game/Game_301_gameRules.pdf)
 
-COMPILATION
+## COMPILATION
 
 A simple "./configure && make && make install" should suffice.  You
 may need to install any development packages for libgtk.
 
-To compile in order to run a multiplayer server, use "./configure --enable-server && make && make install"
+To compile in order to run a multiplayer server, use "./configure --enable-server && make && make install". In order to run a server, you will need to install mysql.
 
-RUNNING
+## RUNNING
 
 Run with "./rftg".  You may specify number of players, expansion level,
 etc with some command line options:
@@ -29,7 +29,7 @@ You may also change these setting once the game is running with the
 
 If you have compiled with the --enable-server option, you can launch the server program with "./server".
 
-INTERFACE
+## INTERFACE
 
 Cards in your hand are displayed across the bottom of the window.  Your
 active cards are just above, in the blue-shaded area.  Your opponents
@@ -47,13 +47,13 @@ are satisfied, click the "Ok" button at the far right of the prompt
 area.  This button will not be clickable if your current selection is
 not legal.
 
-BUGS
+## BUGS
 
 If you encounter a bug, please open a github issue.
 
-LEGAL
+## LEGAL
 
-The source code was originally created by Keldon and is placed under the GPL.  For
+The source code was originally created by [Keldon](http://keldon.net/) and is placed under the GPL.  For
 details, see the file COPYING.
 
 The original game of Race for the Galaxy was designed by Tom Lehmann and
