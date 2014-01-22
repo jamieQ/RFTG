@@ -1,6 +1,6 @@
 /*
  * Race for the Galaxy AI
- * 
+ *
  * Copyright (C) 2009-2011 Keldon Jones
  *
  * This program is free software; you can redistribute it and/or modify
@@ -819,7 +819,7 @@ void send_msg(int cid, char *msg)
 		/* Reallocate buffer */
 		c->out_buf = (char *)realloc(c->out_buf, c->out_len + size);
 	}
-	
+
 	/* Copy current message to end of buffer */
 	memcpy(c->out_buf + c->out_len, msg, size);
 
@@ -3840,7 +3840,7 @@ int main(int argc, char *argv[])
 
 	/* Reconnect automatically when connection to database is lost */
 	mysql_options(mysql, MYSQL_OPT_RECONNECT, &reconnect);
- 
+
 	/* Read game states from database */
 	db_load_sessions();
 	db_load_attendance();
@@ -3955,7 +3955,11 @@ int main(int argc, char *argv[])
 					/* Handle incoming data */
 					handle_data(i);
 				}
+            }
 
+            /* Check for still active */
+            if (c_list[i].fd > 0)
+            {
 				/* Check for unsent data ready to send */
 				if (FD_ISSET(c_list[i].fd, &writefds))
 				{
