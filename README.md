@@ -10,7 +10,7 @@ for the game and expansions can be found at:
 A simple "./configure && make && make install" should suffice.  You
 may need to install any development packages for libgtk.
 
-To compile in order to run a multiplayer server, use "./configure --enable-server && make && make install". In order to run a server, you will need to install mysql. The game runs on port 16309.
+To compile in order to run a multiplayer server, use "./configure --enable-server && make && make install". Running the server program also requires that mysql be installed and a database be configured. You can import the mysqldump file 'rftg.sql' to set up the requisite tables.
 
 ### RUNNING
 
@@ -27,7 +27,10 @@ etc with some command line options:
 You may also change these setting once the game is running with the
 "Select Parameters" option under the Game menu.
 
-If you have compiled with the --enable-server option, you can launch the server program with "./server".
+If you have compiled with the --enable-server option, you can launch the server program with "./server". It accepts the following options:
+
+	-p <num>	-- Port number (deault is 16309)
+	-d <string>	-- Database name (default is 'rftg')
 
 ### INTERFACE
 
